@@ -1,0 +1,21 @@
+<h1>計算結果</h1>
+
+
+
+<p>
+
+<%  @keisan = params[:kei] %>
+<% if params[:kei] == "addition" %>
+<%=  @message2 =  params[:msg] + params[:msg2] %>
+
+<% elsif params[:kei] == "subtraction" %>
+<%=  @message2 =  params[:msg] - params[:msg2] %>
+
+<% elsif params[:kei] == "multiplication" %>
+<%=  @message2 =  params[:msg] * params[:msg2] %>
+
+<% elsif params[:kei] == "division" %>
+<%=  @message2 =  params[:msg] / params[:msg2] %>
+<% end  %>
+
+</p>

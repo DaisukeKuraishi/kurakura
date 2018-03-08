@@ -4,18 +4,30 @@
 
 <p>
 
-<%  @keisan = params[:kei] %>
 <% if params[:kei] == "addition" %>
+<div class="excep">
+<%= "#{params[:msg]} + #{params[:msg2]} = "%>
 <%=  @message2 =  params[:msg] + params[:msg2] %>
 
 <% elsif params[:kei] == "subtraction" %>
+<div class="excep3">
+<%= "#{params[:msg]} - #{params[:msg2]} = "%>
 <%=  @message2 =  params[:msg] - params[:msg2] %>
-
+</div>
 <% elsif params[:kei] == "multiplication" %>
+<%= "#{params[:msg]} * #{params[:msg2]} = "%>
 <%=  @message2 =  params[:msg] * params[:msg2] %>
 
 <% elsif params[:kei] == "division" %>
+<%= "#{params[:msg]} / #{params[:msg2]} = "%>
 <%=  @message2 =  params[:msg] / params[:msg2] %>
+</div>
+
+<% else %>
+<div class="excep2">
+<%= @message2 = "表示できません！！"%>
+</div>
 <% end  %>
+
 
 </p>

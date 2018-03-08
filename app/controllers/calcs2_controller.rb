@@ -1,15 +1,6 @@
 class Calcs2Controller < ApplicationController
 
-  def show
-
-
-
-  end
-
-  def keisan
-
-  end
-
+  
 
 
   def show2
